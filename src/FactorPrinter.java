@@ -7,12 +7,22 @@ public class FactorPrinter {
 
         int factor = 0;
 
-        for (int i=1; i <= number; i++) {
+//        for (int i=1; i <= number; i++) {
+//            if (number % i == 0) {
+//                factor = i;
+//                System.out.print(factor+" ");
+//            }
+//        }
+
+        int i = 1;
+        while (i <= number) {
             if (number % i == 0) {
                 factor = i;
-                System.out.print(factor+" ");
+                System.out.print(factor + " ");
             }
+            i++;
         }
+
         return factor;
     }
 }
